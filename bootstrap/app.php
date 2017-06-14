@@ -23,6 +23,16 @@ $app = new Laravel\Lumen\Application(
     realpath(__DIR__.'/../')
 );
 
+/*
+Menambahkan depedency untuk mongo
+*/
+$app->register(Jenssegers\Mongodb\MongodbServiceProvider::class);
+
+$app->withEloquent();
+/*
+* load konfigurasi DB
+*/
+$app->configure('database');
 // $app->withFacades();
 
 // $app->withEloquent();
