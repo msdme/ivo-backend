@@ -2,6 +2,6 @@
 /.idea
 Homestead.json
 Homestead.yaml
-.env
+
 /.phpintel/
 composer.lock
